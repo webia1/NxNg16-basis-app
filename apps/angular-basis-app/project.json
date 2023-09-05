@@ -1,5 +1,5 @@
 {
-  "name": "angular-basis-app",
+  "name": "angular-16-basis-app",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "angular-basis-app-workspace",
