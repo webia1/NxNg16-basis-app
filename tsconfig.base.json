@@ -16,7 +16,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@angular-basis-app-workspace/shared-ui": ["libs/shared-ui/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
