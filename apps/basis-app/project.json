@@ -1,25 +1,25 @@
 {
-  "name": "angular-basis-app",
+  "name": "basis-app",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "angular-basis-app-workspace",
-  "sourceRoot": "apps/angular-basis-app/src",
+  "sourceRoot": "apps/basis-app/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/angular-basis-app",
-        "index": "apps/angular-basis-app/src/index.html",
-        "main": "apps/angular-basis-app/src/main.ts",
+        "outputPath": "dist/apps/basis-app",
+        "index": "apps/basis-app/src/index.html",
+        "main": "apps/basis-app/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "apps/angular-basis-app/tsconfig.app.json",
+        "tsConfig": "apps/basis-app/tsconfig.app.json",
         "assets": [
-          "apps/angular-basis-app/src/favicon.ico",
-          "apps/angular-basis-app/src/assets"
+          "apps/basis-app/src/favicon.ico",
+          "apps/basis-app/src/assets"
         ],
-        "styles": ["apps/angular-basis-app/src/styles.scss"],
+        "styles": ["apps/basis-app/src/styles.scss"],
         "scripts": []
       },
       "configurations": {
@@ -53,10 +53,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "browserTarget": "angular-basis-app:build:production"
+          "browserTarget": "basis-app:build:production"
         },
         "development": {
-          "browserTarget": "angular-basis-app:build:development"
+          "browserTarget": "basis-app:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -64,7 +64,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "browserTarget": "angular-basis-app:build"
+        "browserTarget": "basis-app:build"
       }
     },
     "lint": {
@@ -72,8 +72,8 @@
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
-          "apps/angular-basis-app/**/*.ts",
-          "apps/angular-basis-app/**/*.html"
+          "apps/basis-app/**/*.ts",
+          "apps/basis-app/**/*.html"
         ]
       }
     },
@@ -81,7 +81,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/angular-basis-app/jest.config.ts",
+        "jestConfig": "apps/basis-app/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
@@ -94,7 +94,7 @@
     "serve-static": {
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "angular-basis-app:build"
+        "buildTarget": "basis-app:build"
       }
     }
   }

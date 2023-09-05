@@ -1,9 +1,9 @@
 /* eslint-disable */
 export default {
-  displayName: 'angular-basis-app',
+  displayName: 'basis-app',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../coverage/apps/angular-basis-app',
+  coverageDirectory: '../../coverage/apps/basis-app',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',
