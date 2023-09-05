@@ -13,4 +13,11 @@ export const appRoutes: Route[] = [
         (m) => m.HomeComponent
       ),
   },
+  {
+    path: 'demos',
+    loadComponent: () =>
+      import('./routed/components/demos/demos.component').then(
+        (m) => m.DemosComponent
+      ),
+  },
 ];
