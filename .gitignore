@@ -3,6 +3,7 @@
 # compiled output
 dist
 tmp
+/tmp
 /out-tsc
 
 # dependencies
@@ -39,3 +40,4 @@ testem.log
 Thumbs.db
 
 .angular
+tmp/shell.sh
