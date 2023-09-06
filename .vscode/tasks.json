@@ -35,7 +35,7 @@
       "label": "Start FE/BE Basis",
       "dependsOn": ["Start FE Basis", "Start BE Basis"],
       "runOptions": {
-        "runOn": "folderOpen"
+        "runOn": "default"
       },
       "problemMatcher": ["$webpack-builder"]
     }
