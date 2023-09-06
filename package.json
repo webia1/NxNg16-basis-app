@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "nx serve angular-basis-app"
+    "start": "npm run start:fe:be:basis",
+    "start:fe:basis": "nx serve basis-app",
+    "start:be:basis": "nx serve middleware-basis-app",
+    "start:fe:be:basis": "run-p start:fe:basis start:be:basis"
   },
   "private": true,
   "dependencies": {
@@ -63,6 +66,7 @@
     "jest-environment-jsdom": "^29.4.1",
     "jest-environment-node": "^29.4.1",
     "jest-preset-angular": "~13.1.0",
+    "npm-run-all": "^4.1.5",
     "nx": "16.8.0",
     "prettier": "^2.6.2",
     "ts-jest": "^29.1.0",

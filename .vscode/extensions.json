@@ -1,5 +1,6 @@
 {
   "recommendations": [
+    "actboy168.tasks",
     "abierbaum.vscode-file-peek",
     "Andreabbondanza.ignoregit",
     "andrew-codes.cypress-snippets",
@@ -33,7 +34,6 @@
     "ghaschel.vscode-angular-html",
     "ghmcadams.lintlens",
     "GitHub.vscode-pull-request-github",
-    "golang.go",
     "hangxingliu.vscode-nginx-conf-hint",
     "hediet.vscode-drawio",
     "IBM.output-colorizer",

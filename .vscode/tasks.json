@@ -1,0 +1,43 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start FE Basis",
+      "type": "shell",
+      "command": "nx serve basis-app",
+      "presentation": {
+        "panel": "new"
+      },
+      "options": {
+        "statusbar": {
+          "label": "FE BASIS",
+          "hide": true
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Start BE Basis",
+      "type": "shell",
+      "command": "nx serve middleware-basis-app",
+      "presentation": {
+        "panel": "new"
+      },
+      "options": {
+        "statusbar": {
+          "label": "BE BASIS",
+          "hide": true
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Start FE/BE Basis",
+      "dependsOn": ["Start FE Basis", "Start BE Basis"],
+      "runOptions": {
+        "runOn": "folderOpen"
+      },
+      "problemMatcher": ["$webpack-builder"]
+    }
+  ]
+}
