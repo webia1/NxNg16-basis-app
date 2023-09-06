@@ -19,6 +19,9 @@
     "paths": {
       "@angular-basis-app-workspace/shared-ui": [
         "libs/shared/ui/src/index.ts"
+      ],
+      "@angular-basis-app-workspace/shared-formly": [
+        "libs/shared/formly/src/index.ts"
       ]
     }
   },
