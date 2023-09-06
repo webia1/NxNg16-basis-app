@@ -1,0 +1,14 @@
+{
+  "name": "BasisApp Nx DevContainer",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": ["actboy168.tasks", "nrwl.angular-console"]
+    }
+  },
+
+  "postCreateCommand": "npm install"
+}
