@@ -1,3 +1,4 @@
+import { TranslateService } from '@ngx-translate/core';
 import { ApplicationConfig } from '@angular/core';
 import {
   provideRouter,
@@ -13,5 +14,6 @@ export const appConfig: ApplicationConfig = {
       withEnabledBlockingInitialNavigation(),
     ),
     provideAnimations(),
+    TranslateService, // Hinzufügen von TranslateService
   ],
 };

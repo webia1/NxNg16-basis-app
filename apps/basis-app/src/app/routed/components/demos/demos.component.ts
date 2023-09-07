@@ -15,7 +15,7 @@ import { FormlyFieldConfig } from '@ngx-formly/core';
 export class DemosComponent {
   form = new FormGroup({});
 
-  model = { email: 'email@gmail.com' };
+  model = { email: '' };
 
   fields: FormlyFieldConfig[] = [
     {

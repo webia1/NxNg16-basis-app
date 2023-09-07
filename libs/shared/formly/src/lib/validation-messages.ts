@@ -1,14 +1,11 @@
 import { TranslateService } from '@ngx-translate/core';
 
-export function translateValidationMessages(
-  translateService: TranslateService,
-) {
+export function translateValidationMessages(ts: TranslateService) {
   return {
     validationMessages: [
       {
         name: 'required',
-        message: () =>
-          translateService.instant('VALIDATION.REQUIRED'),
+        message: () => ts.instant('VALIDATION.REQUIRED'),
       },
     ],
   };

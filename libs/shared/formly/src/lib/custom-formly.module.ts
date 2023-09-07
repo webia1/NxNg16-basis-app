@@ -10,6 +10,7 @@ import {
 } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { translateValidationMessages } from './validation-messages';
+import { FormlyMatInputModule } from '@ngx-formly/material/input';
 
 export function HttpLoaderFactory(
   http: HttpClient,
@@ -25,6 +26,7 @@ export function HttpLoaderFactory(
   imports: [
     FormlyModule.forRoot(),
     FormlyMaterialModule,
+    FormlyMatInputModule,
     ReactiveFormsModule,
     HttpClientModule,
     TranslateModule.forRoot({
@@ -47,6 +49,7 @@ export function HttpLoaderFactory(
   exports: [
     FormlyModule,
     FormlyMaterialModule,
+    FormlyMatInputModule,
     ReactiveFormsModule,
     TranslateModule,
   ],
