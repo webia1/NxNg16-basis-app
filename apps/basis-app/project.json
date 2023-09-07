@@ -17,9 +17,17 @@
         "tsConfig": "apps/basis-app/tsconfig.app.json",
         "assets": [
           "apps/basis-app/src/favicon.ico",
-          "apps/basis-app/src/assets"
+          "apps/basis-app/src/assets",
+          {
+            "glob": "**/*",
+            "input": "globals/global-assets/i18n/",
+            "output": "global-assets/i18n/"
+          }
         ],
-        "styles": ["apps/basis-app/src/styles.scss"],
+        "styles": [
+          "globals/global-assets/styles/corporate-basis.scss",
+          "apps/basis-app/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
